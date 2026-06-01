@@ -1,0 +1,73 @@
+debug                       : 0
+device                      : cuda:0
+seed                        : 0
+sampler_seed                : 153
+num_workers                 : 8
+dataset                     : hpa2nd
+sampler                     : default
+train_csv                   : /home/unicamp/200208/models/hpa-individual-cell-classifier/datasets/split/256_train+ext+rare.csv
+data_dir                    : /home/unicamp/200208/datasets/input/train_cell_256
+cell_conf_aware_training    : True
+image_conf_aware_training   : True
+conf_preds                  : /home/unicamp/200208/models/hpa-individual-cell-classifier/experiments/models/pred-hpa2nd-rs50-lr0.0002-b6-aug2nd-adamw-eid-2nd-pw10-1-try-2-normalized.csv
+conf_alpha                  : 1.0
+conf_gamma                  : 0.5
+val_fold                    : 0
+validate_batch_size         : 1
+cell_count                  : 16
+image_size                  : 256
+architecture                : resnest50
+mode                        : normal
+trainable_stem              : True
+trainable_backbone          : True
+dilated                     : False
+backbone_weights            : imagenet
+is_simclr_model             : False
+is_dino_model               : False
+checkpoint_key              : teacher
+cell_logits_to_image_logits : False
+batch_size                  : 6
+first_epoch                 : 0
+max_epoch                   : 10
+accumulate_steps            : 4
+mixed_precision             : True
+amp_min_scale               : None
+validate                    : True
+optimizer                   : adamw
+poly_lr_decay               : False
+lr                          : 0.0002
+lr_alpha_scratch            : 1.0
+lr_alpha_bias               : 1.0
+wd                          : 0.0
+warmup_epochs               : 1
+warmup_start_factor         : 0.01
+label_smoothing             : 0.0
+class_weight                : none
+cell_pos_weight             : 1.0
+cell_loss_weight            : 0.1
+ema                         : False
+ema_steps                   : 1
+ema_warmup                  : 1
+ema_decay                   : 0.99
+reannotate_neg_labels       : False
+reannotate_threshold        : 0.01
+cell_conf_as_cell_labels    : False
+print_ratio                 : 0.1
+monitor_memory_usage        : True
+is_supconclassifier_model   : False
+supcon_temperature          : 0.07
+supcon_alpha                : 0.8
+supcon_use_hard_mask        : True
+bce_loss_weight             : 1.0
+supcon_loss_weight          : 1.0
+projection_dim              : 128
+hidden_dim                  : 256
+normalization_mean          : [0.485, 0.456, 0.406, 0.485]
+normalization_std           : [0.229, 0.224, 0.225, 0.229]
+aug_yaml                    : /home/unicamp/200208/models/hpa-individual-cell-classifier/configs/sin_256_final.yaml
+model_restore               : 
+optimizer_restore           : 
+scheduler_restore           : 
+scaler_restore              : 
+train_meta_restore          : 
+tag                         : hpa2nd-rs50-lr0.0002-b6-aug2nd-adamw-eid-2nd-pw1-cp-fix-preds-2

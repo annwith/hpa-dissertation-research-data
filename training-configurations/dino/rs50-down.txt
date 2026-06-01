@@ -1,0 +1,65 @@
+debug                       : 0
+device                      : cuda:0
+seed                        : 0
+sampler_seed                : 153
+num_workers                 : 8
+dataset                     : hparanzer
+sampler                     : default
+train_csv                   : /home/jumidlej/git-projects/hpa-individual-cell-classifier/datasets/split/dino-kaggle.csv
+data_dir                    : /home/jumidlej/datasets/input/train_cell_256
+cell_conf_aware_training    : False
+image_conf_aware_training   : False
+conf_preds                  : no
+conf_alpha                  : 1.0
+conf_gamma                  : 0.5
+val_fold                    : 5
+validate_batch_size         : 1
+cell_count                  : 16
+image_size                  : 256
+architecture                : resnest50
+mode                        : normal
+trainable_stem              : True
+trainable_backbone          : True
+dilated                     : False
+backbone_weights            : /home/jumidlej/dino-checkpoints/rs50-imagenet-norm-flip/checkpoint.pth
+is_simclr_model             : False
+is_dino_model               : True
+checkpoint_key              : teacher
+cell_logits_to_image_logits : False
+batch_size                  : 4
+first_epoch                 : 0
+max_epoch                   : 20
+accumulate_steps            : 6
+mixed_precision             : True
+amp_min_scale               : None
+validate                    : False
+optimizer                   : adamw
+poly_lr_decay               : False
+lr                          : 0.0002
+lr_alpha_scratch            : 1.0
+lr_alpha_bias               : 1.0
+wd                          : 0.0
+warmup_epochs               : 1
+warmup_start_factor         : 0.01
+label_smoothing             : 0.0
+class_weight                : none
+cell_pos_weight             : 10.0
+cell_loss_weight            : 0.1
+ema                         : False
+ema_steps                   : 1
+ema_warmup                  : 1
+ema_decay                   : 0.99
+reannotate_neg_labels       : False
+reannotate_threshold        : 0.01
+cell_conf_as_cell_labels    : False
+print_ratio                 : 0.1
+monitor_memory_usage        : True
+normalization_mean          : [0.485, 0.456, 0.406, 0.485]
+normalization_std           : [0.229, 0.224, 0.225, 0.229]
+aug_yaml                    : /home/jumidlej/git-projects/hpa-individual-cell-classifier/configs/sin_256_final.yaml
+model_restore               : 
+optimizer_restore           : 
+scheduler_restore           : 
+scaler_restore              : 
+train_meta_restore          : 
+tag                         : hparanzer-rs50-lr0.0002-b4-aug2nd-adamw-eid-down-task-dino

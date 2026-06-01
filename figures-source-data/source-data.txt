@@ -1,0 +1,44 @@
+Figura 2.16 d0c1b088-bbca-11e8-b2bc-ac1f6b6435d0 from kaggle
+Figura 3.1 5b99d3e8-bb99-11e8-b2b9-ac1f6b6435d0 from kaggle
+Figura 3.4 from kaggle train.csv
+Figura 3.5 from kaggle train.csv
+Figura 3.6 from kaggle train.csv
+Figura 3.8 from kaggle train.csv - 
+ '51ef7530-bba5-11e8-b2ba-ac1f6b6435d0',
+ '39c9a9ee-bb9b-11e8-b2b9-ac1f6b6435d0',
+ '982c921a-bbb1-11e8-b2ba-ac1f6b6435d0',
+ 'd0c1b088-bbca-11e8-b2bc-ac1f6b6435d0',
+ '0189cff8-bbc0-11e8-b2bb-ac1f6b6435d0',
+ 'e2589c84-bbb2-11e8-b2ba-ac1f6b6435d0',
+ 'f030c696-bb9a-11e8-b2b9-ac1f6b6435d0',
+ '5f2b97e6-bbc4-11e8-b2bc-ac1f6b6435d0',
+ 'd92537b8-bbca-11e8-b2bc-ac1f6b6435d0',
+ '2d491298-bbca-11e8-b2bc-ac1f6b6435d0',
+ 'bf433be8-bbc9-11e8-b2bc-ac1f6b6435d0',
+ 'b6a469d8-bbad-11e8-b2ba-ac1f6b6435d0',
+ 'ca883cf4-bb99-11e8-b2b9-ac1f6b6435d0',
+ 'f72cd504-bba7-11e8-b2ba-ac1f6b6435d0',
+ 'b64bd070-bb99-11e8-b2b9-ac1f6b6435d0',
+ '6a21830a-bba5-11e8-b2ba-ac1f6b6435d0',
+ 'f9fced36-bbb2-11e8-b2ba-ac1f6b6435d0',
+ '1900d278-bbc3-11e8-b2bc-ac1f6b6435d0',
+ '86900d2a-bba2-11e8-b2b9-ac1f6b6435d0'
+
+Figura 4.2 train.csv from kaggle and publichpa.csv
+Figura 4.4 train.csv from kaggle and 256_train+ext+rare from second placed solution
+
+Figura 4.5 5fb643ee-bb99-11e8-b2b9-ac1f6b6435d0 from second placed data
+
+Figura 4.7 descobrir qual foi o modelo e colocar as predições
+Figura 4.8 descobrir qual foi o modelo e colocar as predições
+
+Tabela 5.1 resultados obtidos rodando no kaggle no teste público, eu tenho os modelos e o notebook de submissão
+Tabela 5.1 mesma coisa
+
+Tabela 5.3 como que ela foi feita, de onde a gente tirou essas informações, cadê as predições: hpa-512-rs269-lr0.1-b16-ls0.1-mixup-ema1-cp-m1_predictions.csv
+
+Figura 5.1 e 5.2 tem o nome da amostra e do modelo utilizado.
+
+Tabela 5.7 /home/jumidlej/weights/pred-hpa2nd-rs50-lr0.0002-b6-aug2nd-adamw-eid-2nd-pw1-cp-fix-preds-2.csv (bem, ok, mas pq esse modelo?)
+
+Todas as tabelas de resultados de teste foram resultados obtidos com a submissão ao kaggle.

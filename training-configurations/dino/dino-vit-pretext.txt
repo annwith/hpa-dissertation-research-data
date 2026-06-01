@@ -1,0 +1,39 @@
+arch: vit_small
+batch_size_per_gpu: 64
+clip_grad: 3.0
+data_path: /home/lovelace/proj/proj1018/jmidlej/input/train_cell_256
+data_split: /home/lovelace/proj/proj1018/jmidlej/dino/split/dino.csv
+dist_url: env://
+drop_path_rate: 0.1
+epochs: 100
+freeze_last_layer: 1
+global_crops_scale: (0.4, 1.0)
+gpu: 0
+in_channels: 4
+local_crops_number: 8
+local_crops_scale: (0.05, 0.4)
+local_rank: 0
+lr: 0.0005
+min_lr: 1e-06
+momentum_teacher: 0.996
+norm_last_layer: True
+num_workers: 10
+optimizer: adamw
+out_dim: 65536
+output_dir: /home/lovelace/proj/proj1018/jmidlej/dino/checkpoints
+patch_size: 16
+rank: 0
+saveckp_freq: 20
+seed: 0
+teacher_temp: 0.04
+use_bn_in_head: False
+use_fp16: True
+warmup_epochs: 10
+warmup_teacher_temp: 0.04
+warmup_teacher_temp_epochs: 0
+weight_decay: 0.04
+weight_decay_end: 0.4
+world_size: 1
+Data loaded: there are 405572 images.
+Student and Teacher are built: they are both vit_small network.
+Loss, optimizer and schedulers ready.
