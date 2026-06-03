@@ -147,7 +147,13 @@ The notebooks correspond to:
 * conformal-prediction-related and DINO test submission;
 * second-place-solution reproduction/adaptation public-test submission.
 
-Kaggle test results reported in the dissertation were obtained by submitting the corresponding prediction/submission files to Kaggle.
+Kaggle test results reported in the dissertation were obtained by submitting the corresponding notebook files to Kaggle.
+
+The Kaggle versions of these notebooks are also available at:
+
+* Baseline public-test submission: https://www.kaggle.com/code/julianamidlej/hpa-baseline-public-submission
+* Conformal-prediction-related and DINO test submission: https://www.kaggle.com/code/julianamidlej/1-hpa-cp-public-submission
+* Second-place-solution reproduction/adaptation public-test submission: https://www.kaggle.com/code/julianamidlej/2nd-hpa-public-submission
 
 ### `model-predictions/`
 
@@ -158,7 +164,6 @@ Current files:
 ```text
 model-predictions/
 ├── pred-hpa-512-rs269-lr0.1-b16-ls0.1-mixup-ema1-cp-m1.csv
-├── pred-hpa2nd-rs50-lr0.0002-b6-aug2nd-adamw-eid-2nd-pw10-1-try-2.csv
 └── pred-hpa2nd-rs50-lr0.0002-b6-aug2nd-adamw-eid-2nd-pw1-cp-fix-preds-2.csv
 ```
 
@@ -220,6 +225,10 @@ training-configurations/
 ├── dino/
 │   ├── dino-rs50-pretext.txt
 │   ├── dino-vit-pretext.txt
+│   ├── vit-down-imagenet.txt
+│   ├── vit-down.txt
+│   ├── sin_224_final.yaml
+│   ├── sin_256_final.yaml
 │   ├── rs50-down-imagenet.txt
 │   └── rs50-down.txt
 └── kaggle-2nd-placed-solution/
@@ -274,6 +283,13 @@ To reproduce or audit the dissertation results, use this repository together wit
 5. For Kaggle public-test results, inspect the notebooks in `inference-configurations/`.
 6. For dissertation tables and qualitative figures, inspect `figures-source-data/` and `model-predictions/`.
 
+## Trained model weights
+
+The trained model weights/checkpoints associated with the experiments are available through Google Drive:
+
+<https://drive.google.com/drive/folders/1RU8gWto2Par0Ll3BlPtvH3NKfVAUTAcm?usp=sharing>
+
+
 ## REDU deposit
 
 This repository is intended to accompany the REDU deposit for the dissertation research data.
@@ -292,11 +308,25 @@ Dados derivados e resultados experimentais para classificação fracamente super
 
 ## Citation
 
-If using this repository, please cite the dissertation and the associated REDU dataset.
+If using this repository, please cite the dissertation and the associated REDU dataset when they become available.
 
-```text
-To be added after dissertation/REDU publication.
+The studies and results related to the conformal-prediction-inspired components of the dissertation were published in the following paper:
+
+```bibtex
+@article{david2026csrm,
+  title={CSRM: Cross-Supervision Relational Model of Pixel-Level Pseudo-Labels},
+  author={David, Lucas and Midlej, Juliana and Pedrini, Helio and Dias, Zanoni},
+  journal={SN Computer Science},
+  volume={7},
+  number={5},
+  pages={466},
+  year={2026},
+  publisher={Springer}
+}
 ```
+
+Dissertation and REDU citation information will be added after publication/deposition.
+
 
 ## Author
 
@@ -305,6 +335,10 @@ Institute of Computing, University of Campinas (Unicamp)
 
 ## License
 
-To be defined.
+Unless otherwise stated, the source code, scripts, and notebooks in this repository are released under the MIT License.
 
-This repository contains metadata, configuration files, prediction outputs, and derived research artifacts. Raw third-party image data are not redistributed.
+The documentation, metadata files, split manifests and other research artifacts produced for this dissertation are made available under the Creative Commons Attribution 4.0 International License (CC BY 4.0).
+
+Third-party datasets, raw source files, competition data, and external resources used in the experiments remain subject to their original licenses and terms of use. This repository does not relicense data obtained from Kaggle, the Human Protein Atlas, or other external sources.
+
+Trained model weights/checkpoints made available through external links are provided for research and reproducibility purposes and should be used consistently with the licenses and terms of the corresponding datasets, models, and platforms.
